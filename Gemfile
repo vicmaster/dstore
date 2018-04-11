@@ -13,6 +13,8 @@ gem 'pg'
 gem 'solidus'
 gem 'solidus_auth_devise'
 
+gem 'bootstrap-sass'
+
 gem 'erd'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
