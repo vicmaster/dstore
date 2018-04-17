@@ -23,6 +23,15 @@
           </li>
         <% end %>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="link-to-cart" data-hook>
+          <noscript>
+            <%= link_to t('spree.cart'), spree.cart_path %>
+          </noscript>
+          &nbsp;
+        </li>
+      </ul>
+      <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
